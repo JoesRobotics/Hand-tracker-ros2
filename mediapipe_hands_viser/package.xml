@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mediapipe_hands_viser</name>
+  <version>0.1.0</version>
+  <description>MediaPipe Hands to ROS 2 + Viser visualizer</description>
+
+  <maintainer email="user@example.com">User</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+  <!-- For launch files -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- External Python deps: mediapipe, opencv-python, viser
+       Install via pip in your env, not via rosdep. -->
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
